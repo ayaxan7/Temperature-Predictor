@@ -35,11 +35,16 @@ public class MainActivity extends AppCompatActivity {
         @Override
             public void onClick(View view) {
             output.setVisibility(View.VISIBLE);
-            String chirp=chirps.getText().toString();
-            int n=Integer.parseInt(chirp);
-            double temp=(n/3.0)+4.0;
-            String formattedTemp = String.format("%.2f", temp) + "°C";
-            output.setText(formattedTemp);
+            String chirp = chirps.getText().toString().trim();
+            if (chirp.isEmpty()) {
+                output.setText("Please enter all fields");
+            } else {
+                int n = Integer.parseInt(chirp);
+                double temp = (n / 3.0) + 4.0;
+                String Temp = "The approximate temperature outside is ";
+                String formattedTemp = String.format("%.2f", temp) + "°C";
+                output.setText(Temp+formattedTemp);
+            }
         }
     });
     }
