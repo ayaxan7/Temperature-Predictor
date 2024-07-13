@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Temperature Predictor</string>
+    <string name="hint_enter_input">Enter chirps per 25 seconds</string>
+    <string name="submit_button">Calculate Temperature</string>
+    <string name="textview">TextView</string>
+    <string name="id_authentication">Temperature Predictor</string>
+    <string name="fact">Did you know you can determine the temperature outside by counting the number of chirps a cricket makes per 25 seconds?Just count the number of chirps one makes in 25 seconds and place that number in the box below</string>
+</resources>

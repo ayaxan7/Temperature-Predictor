@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accent"
+    android:backgroundTint="@color/blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="@color/primary_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="@string/id_authentication"
+            android:textColor="@color/primary_text"
+            android:textColorLink="@color/icons_text"
+            android:textSize="24sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/thermo__1_" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto_slab"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:text="@string/fact"
+        android:textColor="@color/primary_text" />
+
+    <EditText
+        android:id="@+id/chirps"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="65dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_slab"
+        android:gravity="center"
+        android:hint="@string/hint_enter_input"
+        android:inputType="number"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text" />
+
+    <Button
+        android:id="@+id/SubmitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/primary_color"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:shadowColor="@color/primary_color"
+        android:text="@string/submit_button"
+        android:textColor="@color/primary_text"
+        android:textColorHighlight="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:textColorLink="@color/primary_color"
+        app:rippleColor="@color/primary_color"
+        app:strokeColor="@color/primary_color" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+</LinearLayout>
